@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Samuel's Overwatch Experience</title>
+  </head>
+  <body>
+    <!-- children of the body element -->
+    <div class="top red">
+      <img src="images/ow2.png" />
+    </div>
+    <div class="bottom">
+      <div class="column black">
+        <div class="character-div dark-purple center-content">
+          <img id="ram-1" src="images/ram1.jpg" onclick="changePictureram()" />
+        </div>
+        <div class="sound-div red">
+          <img src="images/resized_speaker.png" onclick="randomRamattraSound()"/>
+        </div>
+      </div>
+      <div class="column white">
+        <div class="character-div light-purple center-content">
+          <img
+            id="reaper"
+            src="images/reaper-00.jpg"
+            onclick="changePicturereaper()"
+          />
+        </div>
+        <div class="sound-div red">
+          <img src="images/resized_speaker.png" onclick="reaperSounds()"/>
+      </div>
+    </div>
+    <audio src="sounds/Reaper Ultimate Ability Voice Line.mp4" id="reaperSound"></audio>
+    <audio src="sounds/Overwatch 2  Ramattra Ultimate Voiceline Suffer as I have.mp4"id="enemyRAM"></audio>
+    <audio src="sounds/Overwatch 2  Ramattra Ultimate Voiceline (Ally) Rip them to pieces.mp4"id="allyRAM"></audio>
+    <audio src="sounds/NOW DO YOU SEE YOUR ERROR (Ramattra Voice line).mp4"id="NOW"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
